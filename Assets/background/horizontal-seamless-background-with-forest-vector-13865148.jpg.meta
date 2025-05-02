@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      horizontal-seamless-background-with-forest-vector-13865148_0: 6404504034873889211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
