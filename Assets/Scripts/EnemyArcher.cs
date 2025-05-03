@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class EnemyArcher : MonoBehaviour
 {
-    public Transform player;                  // ตำแหน่งของผู้เล่น
-    public Rigidbody2D arrowPrefab;           // กระสุนลูกธนู
-    public Transform shootPoint;              // จุดที่ลูกธนูออก
-    public float detectionRange = 5f;         // ระยะยิง
-    public float shootCooldown = 2f;          // เวลาระหว่างยิง
+    [SerializeField] Transform player;                   // ตำแหน่งของผู้เล่น
+    [SerializeField] Rigidbody2D arrowPrefab;            // กระสุนลูกธนู
+    [SerializeField] Transform shootPoint;               // จุดที่ลูกธนูออก
+    [SerializeField] float detectionRange = 5f;          // ระยะยิง
+    [SerializeField] float shootCooldown = 2f;           // เวลาระหว่างยิง
+    [SerializeField] float timeToTarget = 1f;            // ใช้ในการคำนวณวิถี
+    [SerializeField] float bulletLifetime = 5f;          // อายุของลูกธนู
+
     private float lastShootTime;
 
     void Update()
@@ -19,23 +22,37 @@ public class EnemyArcher : MonoBehaviour
         {
             // หันไปทางผู้เล่น
             Vector2 direction = (player.position - transform.position).normalized;
-            transform.localScale = new Vector3(Mathf.Sign(direction.x), 1, 1); // กลับข้างถ้าผู้เล่นอยู่ซ้าย
+            transform.localScale = new Vector3(Mathf.Sign(direction.x), 1, 1);
 
-            // ยิงถ้าระยะเวลา cooldown ครบ
+            // ยิงถ้า cooldown ครบ
             if (Time.time > lastShootTime + shootCooldown)
             {
-                Shoot(direction);
+                ShootProjectile(player.position);
                 lastShootTime = Time.time;
             }
         }
     }
 
-    void Shoot(Vector2 direction)
+    void ShootProjectile(Vector2 targetPosition)
     {
-        Rigidbody2D arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
-        arrow.linearVelocity = direction * 5f; // ปรับความเร็วตามต้องการ
+        // คำนวณความเร็ว
+        Vector2 velocity = CalculateProjectileVelocity(shootPoint.position, targetPosition, timeToTarget);
 
-        // ทำลายลูกธนูอัตโนมัติ
-        Destroy(arrow.gameObject, 5f);
+        // สร้างกระสุน
+        Rigidbody2D arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
+        arrow.linearVelocity = velocity;
+
+        Destroy(arrow.gameObject, bulletLifetime);
+    }
+
+    Vector2 CalculateProjectileVelocity(Vector2 origin, Vector2 target, float time)
+    {
+        Vector2 distance = target - origin;
+
+        float gravity = Physics2D.gravity.y;
+        float velocityX = distance.x / time;
+        float velocityY = distance.y / time - 0.5f * gravity * time;
+
+        return new Vector2(velocityX, velocityY);
     }
 }
