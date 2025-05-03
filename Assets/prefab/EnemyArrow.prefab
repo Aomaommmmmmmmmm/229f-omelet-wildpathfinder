@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9049287714450947305}
   - component: {fileID: 7372923173042742669}
   - component: {fileID: 4214823396795105468}
-  - component: {fileID: 7532134392378131871}
+  - component: {fileID: 7859056401078150273}
   m_Layer: 0
   m_Name: EnemyArrow
   m_TagString: Untagged
@@ -175,7 +175,7 @@ PolygonCollider2D:
       - {x: 0.1701785, y: 0.075645626}
       - {x: 0.1215767, y: 0.08953976}
   m_UseDelaunayMesh: 0
---- !u!114 &7532134392378131871
+--- !u!114 &7859056401078150273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,6 +184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 371314491623233969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3268123c83d87034785d989f3b1f4cb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ddf147c17ed1b544816a06198ecf06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 20
