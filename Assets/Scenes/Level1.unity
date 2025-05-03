@@ -8836,7 +8836,7 @@ GameObject:
   - component: {fileID: 674495430}
   m_Layer: 0
   m_Name: TX Village Props - Spike Plate
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19596,6 +19596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  flashDuration: 0.2
+  flashCount: 3
+  flashColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &1614084302
 GameObject:
   m_ObjectHideFlags: 0
@@ -25112,6 +25115,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8553926934659351058, guid: 061411fce3125cc46837e97fb0da68cd, type: 3}
       propertyPath: m_Name
+      value: Trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553926934659351058, guid: 061411fce3125cc46837e97fb0da68cd, type: 3}
+      propertyPath: m_TagString
       value: Trap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
