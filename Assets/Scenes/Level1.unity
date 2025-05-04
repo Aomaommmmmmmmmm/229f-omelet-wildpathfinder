@@ -22855,6 +22855,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1792712568666307416, guid: fed0cd81af27cd64e8354e4346bc8fe5, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792712568666307416, guid: fed0cd81af27cd64e8354e4346bc8fe5, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792712568666307416, guid: fed0cd81af27cd64e8354e4346bc8fe5, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792712568666307416, guid: fed0cd81af27cd64e8354e4346bc8fe5, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 3047395647435118991, guid: fed0cd81af27cd64e8354e4346bc8fe5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -30322,6 +30338,22 @@ PrefabInstance:
     - target: {fileID: 4286545595917629356, guid: 447f992abed12194fbc2978a47ffcdf2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923613908694372938, guid: 447f992abed12194fbc2978a47ffcdf2, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923613908694372938, guid: 447f992abed12194fbc2978a47ffcdf2, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923613908694372938, guid: 447f992abed12194fbc2978a47ffcdf2, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5923613908694372938, guid: 447f992abed12194fbc2978a47ffcdf2, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7760076198941552038, guid: 447f992abed12194fbc2978a47ffcdf2, type: 3}
       propertyPath: m_Pivot.x
@@ -38089,6 +38121,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1952425073320777600, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952425073320777600, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952425073320777600, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1952425073320777600, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 3033375620340468894, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
       propertyPath: m_Name
       value: HealthUI
@@ -40045,6 +40093,22 @@ PrefabInstance:
     - target: {fileID: 4065048455748896296, guid: b4cf67d027ad5c84e8a2ed26a6c28a30, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205186154512850479, guid: b4cf67d027ad5c84e8a2ed26a6c28a30, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205186154512850479, guid: b4cf67d027ad5c84e8a2ed26a6c28a30, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205186154512850479, guid: b4cf67d027ad5c84e8a2ed26a6c28a30, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205186154512850479, guid: b4cf67d027ad5c84e8a2ed26a6c28a30, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
