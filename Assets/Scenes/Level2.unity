@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 1202628}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 4201544}
   m_Layer: 0
   m_Name: TX Tileset Ground_145 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 24591576}
   m_Layer: 0
   m_Name: TX Tileset Ground_0 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1150,7 +1150,7 @@ GameObject:
   - component: {fileID: 25674046}
   m_Layer: 0
   m_Name: TX Tileset Ground_81 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 37085612}
   m_Layer: 0
   m_Name: TX Tileset Ground_2 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2975,7 +2975,7 @@ GameObject:
   - component: {fileID: 111095837}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5543,7 +5543,7 @@ GameObject:
   - component: {fileID: 234282514}
   m_Layer: 0
   m_Name: TX Tileset Ground_2 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9403,7 +9403,7 @@ GameObject:
   - component: {fileID: 366530531}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10004,6 +10004,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &394854766 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3996030765851680358, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+  m_PrefabInstance: {fileID: 1840704389}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &396397941
 GameObject:
   m_ObjectHideFlags: 0
@@ -11283,7 +11294,7 @@ GameObject:
   - component: {fileID: 448272520}
   m_Layer: 0
   m_Name: TX Tileset Ground_2 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11483,7 +11494,7 @@ GameObject:
   - component: {fileID: 453909722}
   m_Layer: 0
   m_Name: TX Tileset Ground_10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13581,7 +13592,7 @@ GameObject:
   - component: {fileID: 551253611}
   m_Layer: 0
   m_Name: TX Tileset Ground_81
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14013,7 +14024,7 @@ GameObject:
   - component: {fileID: 562381729}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17817,7 +17828,7 @@ GameObject:
   - component: {fileID: 744578832}
   m_Layer: 0
   m_Name: TX Tileset Ground_9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18661,7 +18672,7 @@ GameObject:
   - component: {fileID: 809576091}
   m_Layer: 0
   m_Name: TX Tileset Ground_0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18929,7 +18940,7 @@ GameObject:
   - component: {fileID: 829446592}
   m_Layer: 0
   m_Name: TX Tileset Ground_145
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19150,7 +19161,7 @@ GameObject:
   - component: {fileID: 839324550}
   m_Layer: 0
   m_Name: TX Tileset Ground_0 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19808,6 +19819,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022092813019615344, guid: 2ef85f42c1ef2fa4db68e0edb2e5ba2c, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 394854766}
+    - target: {fileID: 1022092813019615344, guid: 2ef85f42c1ef2fa4db68e0edb2e5ba2c, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1495373628}
     - target: {fileID: 1022092813019615344, guid: 2ef85f42c1ef2fa4db68e0edb2e5ba2c, type: 3}
       propertyPath: gameOverPanel
       value: 
@@ -21990,7 +22009,7 @@ GameObject:
   - component: {fileID: 973954738}
   m_Layer: 0
   m_Name: TX Tileset Ground_129
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23707,7 +23726,7 @@ GameObject:
   - component: {fileID: 1089529197}
   m_Layer: 0
   m_Name: TX Tileset Ground_12 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24792,7 +24811,7 @@ GameObject:
   - component: {fileID: 1156358721}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25542,7 +25561,7 @@ GameObject:
   - component: {fileID: 1194990859}
   m_Layer: 0
   m_Name: TX Tileset Ground_0 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26664,7 +26683,7 @@ GameObject:
   - component: {fileID: 1272781928}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28395,7 +28414,7 @@ GameObject:
   - component: {fileID: 1336002720}
   m_Layer: 0
   m_Name: TX Tileset Ground_1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29159,7 +29178,7 @@ GameObject:
   - component: {fileID: 1424544833}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30576,6 +30595,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1495373628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5062035298155231370, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+  m_PrefabInstance: {fileID: 1840704389}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1497117801
 GameObject:
   m_ObjectHideFlags: 0
@@ -32517,7 +32547,7 @@ GameObject:
   - component: {fileID: 1553101214}
   m_Layer: 0
   m_Name: TX Tileset Ground_10 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33220,7 +33250,7 @@ GameObject:
   - component: {fileID: 1572033818}
   m_Layer: 0
   m_Name: TX Tileset Ground_1 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35958,7 +35988,7 @@ GameObject:
   - component: {fileID: 1689278964}
   m_Layer: 0
   m_Name: TX Tileset Ground_42
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36092,7 +36122,7 @@ GameObject:
   - component: {fileID: 1691706661}
   m_Layer: 0
   m_Name: TX Tileset Ground_2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37966,7 +37996,7 @@ GameObject:
   - component: {fileID: 1784467202}
   m_Layer: 0
   m_Name: TX Tileset Ground_11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38601,7 +38631,7 @@ GameObject:
   - component: {fileID: 1808546815}
   m_Layer: 0
   m_Name: TX Tileset Ground_9 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39483,6 +39513,103 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1840704389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3033375620340468894, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_Name
+      value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884351966685550406, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9f90a9b706ee524478c048478059f1be, type: 3}
 --- !u!1 &1864132712
 GameObject:
   m_ObjectHideFlags: 0
@@ -39496,7 +39623,7 @@ GameObject:
   - component: {fileID: 1864132714}
   m_Layer: 0
   m_Name: TX Tileset Ground_10 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39985,7 +40112,7 @@ GameObject:
   - component: {fileID: 1869577197}
   m_Layer: 0
   m_Name: TX Tileset Ground_0 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40608,7 +40735,7 @@ GameObject:
   - component: {fileID: 1885177886}
   m_Layer: 0
   m_Name: TX Tileset Ground_17
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40742,7 +40869,7 @@ GameObject:
   - component: {fileID: 1891477047}
   m_Layer: 0
   m_Name: TX Tileset Ground_10 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40876,7 +41003,7 @@ GameObject:
   - component: {fileID: 1895766143}
   m_Layer: 0
   m_Name: TX Tileset Ground_12 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43355,7 +43482,7 @@ GameObject:
   - component: {fileID: 1983558962}
   m_Layer: 0
   m_Name: TX Tileset Ground_42 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43931,7 +44058,7 @@ GameObject:
   - component: {fileID: 2009940082}
   m_Layer: 0
   m_Name: TX Tileset Ground_10 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44775,7 +44902,7 @@ GameObject:
   - component: {fileID: 2027544625}
   m_Layer: 0
   m_Name: TX Tileset Ground_12
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45042,6 +45169,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 867239828}
+    - target: {fileID: 4713539420866523209, guid: c1c2bd3dde0bfec4c92df3be5b32e31f, type: 3}
+      propertyPath: detectionRange
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5141519448694492596, guid: c1c2bd3dde0bfec4c92df3be5b32e31f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -46769,3 +46900,4 @@ SceneRoots:
   - {fileID: 1660797392}
   - {fileID: 916183072}
   - {fileID: 1258637011}
+  - {fileID: 1840704389}
