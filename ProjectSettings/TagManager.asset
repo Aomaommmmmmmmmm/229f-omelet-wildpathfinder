@@ -9,6 +9,7 @@ TagManager:
   - Target
   - Trap
   - Enemy
+  - Coin
   layers:
   - Default
   - TransparentFX
