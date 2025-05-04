@@ -20,6 +20,6 @@ public class WinLevel2 : MonoBehaviour
 
     void Credit()
     {
-        SceneManager.LoadScene("Test level1");
+        SceneManager.LoadScene("UI Credit");
     }
 }

@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeSceneButton: {fileID: 1224537288}
-  sceneName: NextScene
+  sceneName: UI Credit
 --- !u!114 &1224537288
 MonoBehaviour:
   m_ObjectHideFlags: 0
