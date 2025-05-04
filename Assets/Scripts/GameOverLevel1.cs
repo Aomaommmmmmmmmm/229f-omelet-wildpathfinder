@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameOverScreen : MonoBehaviour
+public class GameOverLevel1 : MonoBehaviour
 {
     public Button restartButton;
     public Button mainMenuButton;

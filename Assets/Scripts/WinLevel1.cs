@@ -17,10 +17,12 @@ public class WinLevel1 : MonoBehaviour
     void GoToMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1f;
     }
 
     void GoToLevel2()
     {
-        SceneManager.LoadScene("Test level1");
+        SceneManager.LoadScene("Level2");
+        Time.timeScale = 1f;
     }
 }

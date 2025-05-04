@@ -22,6 +22,7 @@ public class SceneChangerMenu1 : MonoBehaviour
     void ChangeScene()
     {
         SceneManager.LoadScene(sceneName); // ใช้ SceneManager โดยตรง
+        Time.timeScale = 1f;
     }
 
     void OnDestroy()
