@@ -16,7 +16,8 @@ public class GameOverScreen : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene("Test level1");
+        SceneManager.LoadScene("Level1");
+        Time.timeScale = 1f;
     }
 
     void GoToMainMenu()

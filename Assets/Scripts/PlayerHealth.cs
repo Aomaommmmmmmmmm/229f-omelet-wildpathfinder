@@ -5,9 +5,17 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public int maxHealth = 100;
     private int currentHealth;
 
+    [Header("UI")]
+    public GameObject gameOverPanel; // ลาก UI Panel มาใส่ตรงนี้
+
     private void Start()
     {
         currentHealth = maxHealth;
+
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false); // ซ่อนไว้ก่อน
+        }
     }
 
     public void TakeDamage(int amount)
@@ -24,6 +32,12 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player Died!");
-        // ทำลายตัวละครหรือลด scene ได้ตามต้องการ
+
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true); // แสดงหน้าต่าง Game Over
+        }
+
+        Time.timeScale = 0f; // หยุดเกม
     }
 }
