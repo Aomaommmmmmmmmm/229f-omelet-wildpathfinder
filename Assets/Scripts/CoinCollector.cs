@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro; // เพิ่ม namespace สำหรับ TMP
 
 public class CoinCollector : MonoBehaviour
 {
     public int coinsCollected = 0;
     public int totalCoins = 3;
 
-    public Text coinText; // drag UI Text here in Inspector
+    public TextMeshProUGUI coinText; // ใช้ TMP แทน Text ปกติ
 
     void Start()
     {
@@ -17,14 +17,14 @@ public class CoinCollector : MonoBehaviour
     {
         if (collision.CompareTag("Coin"))
         {
-            Destroy(collision.gameObject); // ทำให้เหรียญหายไป
+            Destroy(collision.gameObject); // เหรียญหายไป
             coinsCollected++;
             UpdateUI();
 
             if (coinsCollected >= totalCoins)
             {
                 Debug.Log("You Win!");
-                // ใส่เหตุการณ์ที่เกิดขึ้นเมื่อเก็บครบ เช่น ขึ้นฉากใหม่
+                // เพิ่มเหตุการณ์ต่อได้ เช่น เปลี่ยนฉาก หรือแสดงหน้าจอชัยชนะ
             }
         }
     }
@@ -33,7 +33,7 @@ public class CoinCollector : MonoBehaviour
     {
         if (coinText != null)
         {
-            coinText.text = "Coins: " + coinsCollected + " / " + totalCoins;
+            coinText.text = coinsCollected + " / " + totalCoins;
         }
     }
 }
