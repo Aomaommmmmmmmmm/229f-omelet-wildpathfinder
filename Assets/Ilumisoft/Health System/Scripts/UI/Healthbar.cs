@@ -4,9 +4,10 @@ using UnityEngine.UI;
 namespace Ilumisoft.HealthSystem.UI
 {
     [AddComponentMenu("Health System/UI/Healthbar")]
+    [RequireComponent(typeof(Canvas))]
     public class Healthbar : MonoBehaviour
     {
-        [field:SerializeField]
+        [field: SerializeField]
         public HealthComponent Health { get; set; }
 
         [SerializeField]
@@ -16,32 +17,97 @@ namespace Ilumisoft.HealthSystem.UI
         Image fillImage;
 
         [SerializeField, Tooltip("Whether the healthbar should be hidden when health is empty")]
-        bool hideEmpty = false;
+        bool hideEmpty = true;
 
         [SerializeField, Tooltip("Makes the healthbar being aligned with the camera")]
-        bool alignWithCamera = false;
+        bool alignWithCamera = true;
 
         [SerializeField, Min(0.1f), Tooltip("Controls how fast changes will be animated in points/second")]
-        float changeSpeed = 100;
+        float changeSpeed = 100f;
 
         float currentValue;
+        Camera mainCamera;
 
         protected virtual void Reset()
         {
+            // Automatically assign components
+            canvas = GetComponent<Canvas>();
+            fillImage = GetComponentInChildren<Image>();
+            
+            // Try to find HealthComponent in parent or children
             if (Health == null)
             {
                 Health = GetComponentInParent<HealthComponent>();
+                if (Health == null)
+                {
+                    Health = GetComponentInChildren<HealthComponent>();
+                }
+            }
+        }
+
+        private void Awake()
+        {
+            // Cache main camera
+            mainCamera = Camera.main;
+
+            // Validate components
+            if (canvas == null)
+            {
+                canvas = GetComponent<Canvas>();
+                if (canvas == null)
+                {
+                    Debug.LogError("Healthbar requires a Canvas component!", gameObject);
+                    enabled = false;
+                    return;
+                }
+            }
+
+            if (fillImage == null)
+            {
+                Debug.LogError("Healthbar requires an Image component for the fill bar!", gameObject);
+                enabled = false;
+                return;
+            }
+
+            if (Health == null)
+            {
+                Debug.LogWarning("Healthbar is missing HealthComponent reference!", gameObject);
+                enabled = false;
+                return;
             }
         }
 
         private void Start()
         {
-            currentValue = Health.CurrentHealth;
+            if (Health != null)
+            {
+                currentValue = Health.CurrentHealth;
+                UpdateFillbar();
+                UpdateVisibility();
+            }
+        }
+
+        private void OnEnable()
+        {
+            if (Health != null)
+            {
+                Health.OnHealthChanged += OnHealthChanged;
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (Health != null)
+            {
+                Health.OnHealthChanged -= OnHealthChanged;
+            }
         }
 
         private void Update()
         {
-            if (alignWithCamera)
+            if (!enabled || Health == null) return;
+
+            if (alignWithCamera && mainCamera != null)
             {
                 AlignWithCamera();
             }
@@ -54,36 +120,40 @@ namespace Ilumisoft.HealthSystem.UI
 
         private void AlignWithCamera()
         {
-            transform.forward = Camera.main.transform.forward;
+            transform.forward = mainCamera.transform.forward;
         }
 
-        void UpdateFillbar()
+        private void OnHealthChanged(float newHealth)
         {
-            // Update the fill amount
+            currentValue = newHealth;
+            UpdateFillbar();
+            UpdateVisibility();
+        }
+
+        private void UpdateFillbar()
+        {
+            if (fillImage == null || Health == null) return;
+
             float value = Mathf.InverseLerp(0, Health.MaxHealth, currentValue);
-
-            fillImage.fillAmount = value;
+            fillImage.fillAmount = Mathf.Clamp01(value);
         }
 
-        void UpdateVisibility()
+        private void UpdateVisibility()
         {
-            float value = fillImage.fillAmount;
+            if (canvas == null) return;
 
-            if (canvas != null)
+            float value = fillImage != null ? fillImage.fillAmount : 0f;
+
+            if (hideEmpty && Mathf.Approximately(value, 0f))
             {
-                // Hide if empty
-                if (Mathf.Approximately(value, 0))
+                if (canvas.gameObject.activeSelf)
                 {
-                    if (hideEmpty && canvas.gameObject.activeSelf)
-                    {
-                        canvas.gameObject.SetActive(false);
-                    }
+                    canvas.gameObject.SetActive(false);
                 }
-                // Make sure the canvas is enabled if health is not empty
-                else if (value > 0 && canvas.gameObject.activeSelf == false)
-                {
-                    canvas.gameObject.SetActive(true);
-                }
+            }
+            else if (value > 0f && !canvas.gameObject.activeSelf)
+            {
+                canvas.gameObject.SetActive(true);
             }
         }
     }
