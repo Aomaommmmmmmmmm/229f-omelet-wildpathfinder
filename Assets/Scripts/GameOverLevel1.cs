@@ -2,27 +2,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class WinLevel1 : MonoBehaviour
+public class GameOverLevel1 : MonoBehaviour
 {
+    public Button restartButton;
     public Button mainMenuButton;
-    public Button NextLevel2Button;
 
     void Start()
     {
         // Assign button click events
+        restartButton.onClick.AddListener(RestartGame);
         mainMenuButton.onClick.AddListener(GoToMainMenu);
-        NextLevel2Button.onClick.AddListener(GoToLevel2);
+    }
+
+    void RestartGame()
+    {
+        SceneManager.LoadScene("Level1");
+        Time.timeScale = 1f;
     }
 
     void GoToMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
-        Time.timeScale = 1f;
-    }
-
-    void GoToLevel2()
-    {
-        SceneManager.LoadScene("Level2");
-        Time.timeScale = 1f;
     }
 }

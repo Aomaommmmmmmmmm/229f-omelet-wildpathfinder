@@ -16,10 +16,12 @@ public class WinLevel2 : MonoBehaviour
     void GoToMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1f;
     }
 
     void Credit()
     {
         SceneManager.LoadScene("UI Credit");
+        Time.timeScale = 1f;
     }
 }

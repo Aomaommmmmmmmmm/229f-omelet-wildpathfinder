@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeSceneButton: {fileID: 312864054}
-  sceneName: Test level1
+  sceneName: Level1
 --- !u!114 &312864054
 MonoBehaviour:
   m_ObjectHideFlags: 0

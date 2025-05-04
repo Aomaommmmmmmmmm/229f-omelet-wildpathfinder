@@ -1,16 +1,22 @@
 using UnityEngine;
-using TMPro; // เพิ่ม namespace สำหรับ TMP
+using TMPro;
 
 public class CoinCollector : MonoBehaviour
 {
     public int coinsCollected = 0;
     public int totalCoins = 3;
 
-    public TextMeshProUGUI coinText; // ใช้ TMP แทน Text ปกติ
+    public TextMeshProUGUI coinText; // TMP Text สำหรับแสดง 1 / 3
+    public GameObject winPanel; // ลาก UI Win Panel มาใส่ใน Inspector
 
     void Start()
     {
         UpdateUI();
+
+        if (winPanel != null)
+        {
+            winPanel.SetActive(false); // ซ่อนไว้ก่อน
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +30,7 @@ public class CoinCollector : MonoBehaviour
             if (coinsCollected >= totalCoins)
             {
                 Debug.Log("You Win!");
-                // เพิ่มเหตุการณ์ต่อได้ เช่น เปลี่ยนฉาก หรือแสดงหน้าจอชัยชนะ
+                ShowWinPanel();
             }
         }
     }
@@ -34,6 +40,15 @@ public class CoinCollector : MonoBehaviour
         if (coinText != null)
         {
             coinText.text = coinsCollected + " / " + totalCoins;
+        }
+    }
+
+    void ShowWinPanel()
+    {
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true);
+            Time.timeScale = 0f; // หยุดเกมถ้าต้องการ
         }
     }
 }

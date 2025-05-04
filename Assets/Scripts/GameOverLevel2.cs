@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameOverScreen : MonoBehaviour
+public class GameOverLevel2 : MonoBehaviour
 {
     public Button restartButton;
     public Button mainMenuButton;
@@ -16,7 +16,7 @@ public class GameOverScreen : MonoBehaviour
 
     void RestartGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level2");
         Time.timeScale = 1f;
     }
 
